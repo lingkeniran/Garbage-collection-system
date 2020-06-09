@@ -1,0 +1,7 @@
+<!--personalCenter/myWallet/myWallet.wxml-->
+<view class='container'>
+  <image class='pic' src='/image/qian.png'></image>
+  <text class='text'>我的零钱</text>
+  <text class='text'>￥{{account}}</text>
+  <button class='btn'>提现</button>
+</view>

@@ -1,0 +1,111 @@
+/* garbageCan/garbageCan.wxss */
+.page{
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	background-color: #f5f4ef;
+}
+.topBar{
+  margin: 0;
+	/* margin-bottom: 30rpx; */
+  padding-top: 5px;
+  padding-left:10px;
+  font-size: 18px;
+  text-align: left;
+  height: 30px;
+  width: 100%;
+  background-color: rgba(31, 202, 31, 0.76);
+}
+.else{
+	font-size: 18px;
+	margin: 20rpx;
+}
+.box{
+	display: flex;
+	background-color: white;
+	/* margin-left: 30rpx;
+	margin-right: 30rpx; */
+	border: 1px solid gainsboro;
+	padding: 40rpx;
+	justify-content: space-between
+}
+.name{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.8;
+}
+.pic{
+	height: 120rpx;
+	width: 120rpx;
+	margin-right: 20rpx;
+}
+.checkbox{
+  margin-left: 10rpx;
+	margin-right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box_p{
+	background-color: white;
+	border: 1px solid gainsboro;
+	/* margin-left: 30rpx;
+	margin-right: 30rpx; */
+	margin-bottom: 30rpx;
+	margin-top: 0rpx;
+	padding: 20rpx;
+	display: flex;
+	justify-content: flex-end;
+}
+.delete{
+	margin-top: 30rpx;
+	color: red;
+	height: 60rpx;
+	font-size: 15px;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+.bottom{
+	background-color: white;
+	position: fixed;
+  display: flex;
+	bottom: 0rpx;
+	z-index: 100;
+}
+.totalPrice{
+	padding-left: 20rpx;
+	background-color: white; 
+  width: 530rpx;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid gainsboro;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+	border-radius:5px;
+	line-height:2.55555556
+}
+.switch{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.btn{
+  background-color: rgba(31, 202, 31, 0.76);
+  width: 200rpx;
+  font-size: 16px;
+  font-weight: bold;
+}
+.preview{
+	margin-left: 20rpx;
+}
+.sA{
+	margin-right: 20rpx;
+}
+.con{
+	margin-bottom: 90rpx;
+	
+}
+

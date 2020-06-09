@@ -1,0 +1,55 @@
+/* pages/message/message.wxss */
+page{
+  width: 96%;
+  margin-top: 20rpx;
+  margin-right: 2%;
+  margin-left: 2%;
+
+}
+.meg_text{
+  margin-top: 10rpx;
+  line-height: 36rpx;
+  font-size: 26rpx;
+  color: #000;
+  margin-bottom: 10rpx;
+  text-indent: 35rpx;
+    display: -webkit-box;
+  text-overflow: ellipsis; 
+  overflow: hidden;
+  -webkit-box-orient:vertical; 
+  -webkit-line-clamp:1;
+}
+.meg_time{
+  /* font-family: '宋体'; */
+  font-size: 30rpx;
+  color: #999;
+	margin-left: 30rpx;
+  /* margin-right: 3rpx; */
+}
+.body{
+  background-color: rgba(255, 255, 255, 0.959);
+  /* padding: 8rpx; */
+  border: 1rpx solid;
+  border-color: #999;
+	margin: 20rpx;
+    /* display: flex;
+    flex-direction: row */
+}
+.title{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  margin-bottom: 4rpx; 
+  padding-top: 20rpx;
+}
+
+.img{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 4rpx;
+}
+
+.else{
+	margin-left: 20rpx;
+	margin-top: 20rpx;
+}

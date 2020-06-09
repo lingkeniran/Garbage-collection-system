@@ -1,0 +1,35 @@
+<!--garbageCan/garbageCan.wxml-->
+<view class='topBar'>废品筐</view>
+
+<view wx:if='{{isNull}}' class='con'>
+ <view class='page' style='height:{{windowHeight}}rpx'>
+	<label>
+		<checkbox-group bindchange='checkboxChange'>
+			<view class='bigBox' wx:for='{{can}}' wx:for-item='c' id='{{c.ub_number}}'>
+				<view class='box'>
+					<checkbox class='checkbox' checked='{{checked}}' value='{{c.ub_number}}'></checkbox>
+					<image class='pic' src='{{pic_url+c.g_picture}}'></image>
+					<view>
+						<text class='name'>{{c.g_name}}\n</text>
+						<text>重量：{{c.g_weight}}kg</text>
+					</view>
+					<button id='{{c.ub_number}}' class='delete' bindtap='del'>删除</button>
+				</view>
+				<view class='box_p'>
+					预估价：￥{{c.g_totalprice}}
+				</view>
+			</view>
+		</checkbox-group>
+	</label>
+ </view>
+	<view class='bottom'> 
+		<view class='totalPrice'>
+			<view class='sA'>全选:</view> 
+			<switch class='switch' type='checkbox' bindchange='selectAll'></switch>
+			<view class='preview'>预估总价：￥{{totalPrice}}</view> 
+		</view>
+		<button class='btn' bindtap='submitOrder'>提交订单</button>
+	</view>
+ </view>
+
+ <view wx:else class='else'>废品筐里什么也没有哦(˘•ω•˘)</view>

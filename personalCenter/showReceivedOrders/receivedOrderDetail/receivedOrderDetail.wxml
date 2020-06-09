@@ -1,0 +1,42 @@
+<!--personalCenter/showReceivedOrders/receivedOrderDetail/receivedOrderDetail.wxml-->
+<view class='top'>
+	<view style='color:gray;margin-right:30rpx;' bindtap='cancelOrder'>取消订单</view>
+</view> 
+
+<view wx:if='{{isNull}}'>
+	<view class='box_1'>
+		<view class='row'>订单编号：{{id}}\n</view>
+		<view class='line'></view>
+		<view class='row'>提交时间：{{submitTime}}</view>
+		<view class='line'></view>
+		<view class='row'>订单状态：{{status}}</view>
+		<view class='line'></view>
+		<view class='row'>预约时间：{{time}}</view>
+		<view class='line'></view>
+		<view class='add'>地址：</view>
+		<text class='add'>{{pName}} {{cName}} {{aName}} \n </text>
+		<text class='add'>{{address}}\n</text>
+		<view class='line'></view>
+		<view class='row'>回收员：{{r_name}}</view>
+		<view class='line'></view>
+		<view class='row'>回收员联系电话：{{r_phone}}</view>
+		<view class='line'></view>
+	</view>
+	<view wx:for='{{can}}' wx:for-item='c' id='{{c.ub_number}}'>
+		<view class='box'>
+			<image class='pic' src='{{url+c.g_picture}}'></image>
+			<view>
+				<text class='name'>{{c.g_name}}\n</text>
+				<text>重量：{{c.g_weight}}kg</text>
+			</view>
+		</view>
+		<view class='box_p'>
+			预估价：￥{{c.g_totalprice}}
+		</view> 
+	</view>
+	<view class='image_box'>
+		<image class='image' src='{{pic_url}}'  bindtap='previewImg'></image>
+	</view>
+</view>
+	
+<view wx:else class='else'>该订单不存在，请检查订单号是否正确</view>

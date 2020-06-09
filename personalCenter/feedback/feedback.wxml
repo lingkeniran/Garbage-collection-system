@@ -1,0 +1,8 @@
+<!--personalCenter/feedback/feedback.wxml-->
+<view class='box'>内容描述：</view>
+ 
+<view class="textarea-wrp">
+  <textarea auto-focus="true" bindinput='bindinput' placeholder='您提出的，我们都认真采纳。' maxlength='500' style="height: 16em" />
+</view> 
+
+<button bindtap='submit' class='submit'>提交</button>

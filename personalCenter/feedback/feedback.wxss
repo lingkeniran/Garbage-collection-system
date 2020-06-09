@@ -1,0 +1,15 @@
+/* personalCenter/feedback/feedback.wxss */
+.box{
+  font-size: 18px;
+  margin-left: 30rpx;
+}
+.textarea-wrp {
+  line-height: 1.6;
+  margin: 20rpx;
+  border: 1px solid rgb(102, 98, 98);
+  padding: 20rpx 25rpx;
+  background-color: rgba(243, 243, 243, 0.781);
+}
+.submit{
+  margin: 20rpx;
+}

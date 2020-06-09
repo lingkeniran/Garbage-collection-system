@@ -1,0 +1,262 @@
+/* garbageCan/submitOrder/submitOrder.wxss */
+.back_color{
+	background-color: #f5f4ef;
+}
+.selectAddress {
+	background-color: white;
+  margin: 20rpx;
+  border: 1px solid gainsboro;
+  height: 200rpx;
+}
+.selectTime {
+	background-color: white;
+  margin: 20rpx 20rpx 0rpx 20rpx;
+  border: 1px solid gainsboro;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+}
+.nianyueri {
+	background-color: white;
+  margin: 0rpx 20rpx 0rpx 20rpx;
+  border: 1px solid gainsboro;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+}
+.sT {
+  display: flex;
+  justify-content: space-between;
+}
+.se {
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+	flex-wrap: wrap;
+}
+.add{
+  padding-left: 20rpx;
+	font-size: 16px;
+	color: gray;
+}
+.arrow_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  cursor: pointer;
+}
+/*右箭头*/
+.right {
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  left: 0;
+  top: 10rpx;
+  /*border:1px solid blue;
+	*/
+}
+.right-arrow1, .right-arrow2 {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 10px transparent dashed;
+  border-right: 10px transparent dashed;
+  border-bottom: 10px transparent dashed;
+  border-left: 10px #fff solid;
+  overflow: hidden;
+}
+.right-arrow1 {
+  left: 1px;
+  /*重要*/
+  border-left: 10px #333 solid;
+}
+.right-arrow2 {
+  border-left: 10px #fff solid;
+}
+.intro {
+  margin: 30rpx;
+  text-align: center;
+}
+.select_box {
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+  background-color: #fff;
+  width: auto;
+  position: relative;
+}
+.select {
+	/* margin: 0rpx 20rpx 20rpx 20rpx; */
+  box-sizing: border-box;
+  width: auto;
+  height: 70rpx;
+  border: 1px solid gainsboro;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.select_text {
+	height: 60rpx;
+	line-height: 60rpx;
+  font-size: 16px;
+  flex: 1;
+	padding-top: 10rpx;
+	padding-bottom: 10rpx; 
+  padding-left: 20rpx;
+}
+.select_img {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+.select_img_rotate {
+  transform: rotate(180deg);
+}
+.option_box {
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+.option {
+	padding-top: 10rpx;
+	padding-bottom: 10rpx; 
+  padding-left: 20rpx;
+  display: block;
+  line-height: 60rpx;
+	height: 60rpx;
+  font-size: 16px;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+.box{
+	display: flex;
+	/* margin-left: 20rpx;
+	margin-right: 20rpx; */
+	margin-top: 30rpx;
+	margin-bottom: 0rpx;
+	border: 1px solid gainsboro;
+	padding: 20rpx;
+	justify-content: space-around
+}
+.name{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.8;
+}
+.pic{
+	height: 120rpx;
+	width: 120rpx;
+	margin-right: 20rpx;
+}
+.box_p{
+	border: 1px solid gainsboro;
+	/* margin-left: 20rpx;
+	margin-right: 20rpx; */
+	margin-bottom: 30rpx;
+	margin-top: 0rpx;
+	padding: 20rpx;
+	display: flex;
+	justify-content: flex-end;
+}
+.order{
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+	background-color: white;
+	margin-bottom: 30rpx;
+}
+.btn{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: rgb(20, 202, 20);
+}
+.note{
+	background-color: white;
+	margin: 0 20rpx 100rpx 20rpx;
+}
+.input{
+	margin-top: 10rpx;
+	height: 100rpx;
+}
+.p{
+	margin-left: 20rpx;
+	font-size: 16px;
+}
+.line{
+  height: 1px;
+  width: 100%;
+  background-color: gainsboro;
+	margin-bottom: 10rpx;
+}
+
+.picture{
+	display: flex;
+	margin-bottom: 20rpx;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.image image {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 10px;
+  float: left;
+}
+
+.deleteImage {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  float: left;
+}
+
+.deleteImage image {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  margin: 0px;
+  margin-left: -10px;
+}
+
+.jiatupian {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin: 10px;
+  border: rgb(223, 223, 223) 2px solid;
+  float: left;
+}
+
+.jiatupian image {
+  width: 80%;
+  height: 80%;
+  margin-top: 10%;
+}
+
+.pic_onload{
+	margin-left: 30rpx;
+	margin-right: 20rpx;
+	margin-bottom: 6rpx;
+	position: relative;
+}

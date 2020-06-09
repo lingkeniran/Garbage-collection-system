@@ -1,0 +1,4 @@
+<!--pages/message/details.wxml-->
+<view class='megDate'>{{message.m_addtime}}</view>
+<view class='content'>{{message.m_content}}</view>
+

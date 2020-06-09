@@ -1,0 +1,20 @@
+/* personalCenter/aboutUs/aboutUs.wxss */
+.box{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  width: 100%;
+  margin: 20rpx 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.text{
+  font-size: 16px;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 30rpx;
+}

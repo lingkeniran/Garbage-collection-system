@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+		"van-area": "../../../dist/area/index",
+		"van-popup": "../../../dist/popup/index",
+		"van-cell": "../../../dist/cell/index"
+	},
+	"navigationBarTitleText": "修改地址"
+}

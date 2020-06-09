@@ -1,0 +1,5 @@
+{
+  "usingComponents": {},
+	"navigationBarTitleText": "已完成订单页",
+	"enablePullDownRefresh": true
+}

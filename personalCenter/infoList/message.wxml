@@ -1,0 +1,20 @@
+<!-- 信息列表 -->
+<view wx:if='{{isNull}}'>
+	<block wx:for="{{megList}}"  wx:key="{{index}}">
+		<view class='body' data-index='{{index}}' catchtap='getDetail'>
+			<view class='title'>
+			<block wx:if="{{item.m_isread}}">
+			<image src='/image/no_meg.png' class='img'></image>
+		</block>
+		<block wx:else>
+			<image src="{{imgUrl}}" class='img'></image>
+		</block>
+				<text class='meg_note'>{{item.m_title}}\n</text>
+				<text class='meg_time'>{{item.m_addtime}}</text>
+			</view>
+			<view class='meg_text'>{{item.m_content}}</view>
+		</view>
+	</block>
+</view>
+
+<view wx:else class='else'>您暂未有消息╮(・o・)╭</view>

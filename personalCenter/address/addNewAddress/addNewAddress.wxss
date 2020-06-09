@@ -1,0 +1,48 @@
+/* personalCenter/address/addNewAddress/addNewAddress.wxss */
+.top{
+	display: flex;
+	justify-content: flex-end;
+}
+.input{
+	margin-top: 10rpx;
+	height: 100rpx;
+}
+.p{
+	margin-left: 20rpx;
+	font-size: 16px;
+}
+.line{
+  height: 1px;
+  width: 100%;
+  background-color: gainsboro;
+	margin-bottom: 10rpx;
+}
+.address{
+	margin: 0 10rpx;
+	height: 100rpx;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	line-height: 100rpx;
+}
+.textarea-wrp {
+  line-height: 1.6;
+	margin: 20rpx 30rpx;
+  border: 1px solid rgb(102, 98, 98);
+  padding: 20rpx 25rpx;
+  background-color: rgba(243, 243, 243, 0.781);
+}
+.default{
+	padding-left: 20rpx;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	display: flex;
+	color: gray;
+	justify-content: space-between;
+}
+.btn{
+	width: 100%;
+	background-color: rgba(31, 202, 31, 0.76);
+	bottom: 0;
+	position: fixed;
+}

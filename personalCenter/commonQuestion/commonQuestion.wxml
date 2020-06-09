@@ -1,0 +1,21 @@
+<!--personalCenter/commonQuestion/commonQuestion.wxml-->
+<view class='question'>
+  Q：如何注册？
+  <view class="arrow_box">
+    <b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+  </view>
+</view>
+
+<view class='question'>
+  Q：如何下单？
+  <view class="arrow_you arrow_box">
+    <b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+  </view>
+</view>
+
+<view class='question'>
+  Q：如何取消订单？
+  <view class="arrow_you arrow_box">
+    <b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+  </view>
+</view>

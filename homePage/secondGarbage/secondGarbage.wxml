@@ -1,0 +1,15 @@
+<!--homePage/secondGarbage/secondGarbage.wxml-->
+<view class='con'> 
+	<view class='box' wx:for='{{secondGarbageInfo}}' wx:for-item='gar' id='{{gar.g_id}}' data-index="{{index}}" bindtap='addGarToCan'> 
+		<view class='pic_name'>
+			<image class='pic' src='{{pic_url+gar.g_picture}}'></image>
+			<text class='text'>{{gar.g_name}}</text> 
+		</view>
+		<view class='weight'>
+			<text>该垃圾单价：</text>
+			<view>￥{{gar.g_price}}元/kg</view>
+		</view>
+	</view>
+</view>
+
+

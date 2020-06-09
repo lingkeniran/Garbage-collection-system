@@ -1,0 +1,18 @@
+<!--homePage/secondGarbage/addGarToCan/addGarToCan.wxml-->
+<view class='box'>	
+	<image class='pic' src="{{g_pic}}"></image>
+</view>
+
+<view class='box'>	
+	<view class='name'>{{g_name}}</view>
+</view>
+
+<view class='box'>	
+	<view class='price'>单价：￥{{g_price}}元/kg</view>
+</view>
+
+<view class='line'></view>
+<input class='input' type='number' placeholder-class='p' placeholder='请输入重量(kg)' bindinput='input'></input>
+<view class='line'></view>
+
+<button class='btn' bindtap='addGarToCan'>加入废品筐</button>

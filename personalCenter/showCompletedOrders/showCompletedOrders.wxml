@@ -1,0 +1,26 @@
+<!--personalCenter/showCompletedOrders/showCompletedOrders.wxml-->
+<view class='page'>
+	<view wx:if="{{isNull}}">
+		<view class='box' wx:for='{{orderList}}' wx:for-item='order'>
+			<view class='orderId'>
+				<view>订单编号：{{order.order_id}}</view>
+				<view>提交时间：{{order.submit_time}}</view>
+			</view>
+			<view class='orderKinds'>
+				<view>
+					<text class='text' wx:for='{{order.gNagNameList}}' wx:for-item='g' space='nbsp'>{{g.g_name}} </text>
+					<view>预约时间：{{order.order_time}}</view>
+				</view>
+				<view class="arrow_box" bindtap='showDetail'  id='{{order.order_id}}'>
+					<b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+				</view>
+			</view>
+			<view class='orderStatus'>
+				<view>预估金额：￥{{order.order_price}}</view>
+				<view class='status'>已完成</view>
+			</view>
+		</view>
+	</view>
+
+<view wx:else class='else'>您暂未有此类订单┐(・o・)┌ </view>
+</view>

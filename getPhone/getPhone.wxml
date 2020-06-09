@@ -1,0 +1,31 @@
+<view wx:if="{{isHide}}">
+<view class="container">
+  <view class="section">
+    <view class="section-item">
+      <view class="section-tips">
+        <label>手机号</label>
+      </view>
+      <view class="section-input">
+        <input placeholder="请输入手机号码" bindinput="usernameInput"></input>
+      </view>
+    </view>
+
+    <view class="section-item">
+      <view class="section-tips">
+        <label>验证码</label>
+      </view>
+      <view class="section-input1">
+        <input placeholder="请输入验证码" bindinput="authcodeInput" password="true"></input>
+      </view>
+      <button class="section-code" disabled="{{isClick}}"  bindtap="gainAuthCodeAction">
+       <text>{{time}}</text>
+      </button>
+    </view>
+  </view>
+
+  <view>
+    <button class="section-btn" bindgetuserinfo='bindGetUserInfo' bindtap="loginBtnClick">注册</button>
+  </view>
+  <view bindtap='login' class='bindtap'>已注册过，直接登录</view>
+</view>
+</view>

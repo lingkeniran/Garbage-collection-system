@@ -1,0 +1,11 @@
+<!--personalCenter/aboutUs/aboutUs.wxml-->
+<view class='box'>
+  <view class='title'>公司信息</view>
+  <view class='text'>公司名称：{{name}}</view>
+  <view class='text'>公司地址：{{address}}</view>
+  <view class='text'>公司电话：{{phone}}</view>
+  <view class='text'>公司邮箱：{{email}}</view>
+  <view class='text'>公司法人：{{people}}</view>
+  <view class='text'>成立时间：{{time}}</view>
+</view>
+

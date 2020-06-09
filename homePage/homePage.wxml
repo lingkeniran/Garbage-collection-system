@@ -1,0 +1,14 @@
+<!--homepage/homepage.wxml-->
+<view class='page'>
+	<view wx:if='{{isNull}}'> 
+		<view class='topBar'>可再生垃圾回收</view>
+		<view class='box'>
+			<view class='kind' wx:for="{{firstGarbageInfo}}" wx:for-item="gar" id='{{gar.g_id}}' mark:myMark="getSecondGarbage" bindtap='getSecondGarbage'>
+				<image class='pic' src='{{pic_url+gar.g_picture}}'></image>
+				<text class='text'>{{gar.g_name}}</text>
+			</view>
+		</view>  
+	</view> 
+
+	<view wx:else class='else'>加载失败Σ(☉▽☉"</view>
+</view> 

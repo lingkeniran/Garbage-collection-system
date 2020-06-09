@@ -1,0 +1,89 @@
+<!--personalCenter/personalCenter.wxml-->
+<view class='box'>
+<view class='topBar'>个人中心</view>
+
+<view class='nickname'>
+  <image class='head' src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  <text class='name'>{{userInfo.nickName}}</text>
+</view> 
+
+<view class='order'>
+  <view class='myOrder'>
+    <image class='dingdan' src='/image/dingdan.png'></image>
+    <text class='myOrderText'>我的订单</text>
+  </view>
+
+  <view class='concreteOrder'>
+    <view class='jiedan' bindtap='showMissedOrders'>
+      <image class='dingdan' src='/image/weijiedan.png'></image>
+      <text>未接单</text>
+    </view>
+    <view class='jiedan' bindtap='showReceivedOrders'>
+      <image class='dingdan' src='/image/yijiedan.png'></image>
+      <text>已接单</text>
+    </view>
+    <view class='jiedan' bindtap='showCompletedOrders'>
+      <image class='dingdan' src='/image/yiwancheng.png'></image>
+      <text>已完成</text>
+    </view>
+  </view>
+  <view class='line'></view>
+</view>
+ 
+<view class='operations'>
+  <view class='row' bindtap='myWallet'>
+    <image class='pic' src='/image/qianbao.png'></image>
+    <text class='text'>我的钱包</text>
+    <view class="arrow_box">
+        <b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='row' bindtap='infoList'>
+		<image class='image' src='{{haveMeg}}'></image>
+    <image class='pic_xiaoxi' src='/image/xiaoxi.png'></image>
+    <text class='text'>消息列表</text>
+    <view class="arrow_box">
+        <b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='row' bindtap='commonQuestion'>
+    <image class='pic' src='/image/wenti.png'></image>
+    <text class='text'>常见问题</text>
+    <view class="arrow_box">
+        <b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='row' bindtap='address'>
+    <image class='pic' src='/image/dizhi.png'></image>
+    <text class='text'>地址管理</text>
+    <view class="arrow_box">
+        <b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='row' bindtap='feedback'>
+    <image class='pic' src='/image/yijianfankui.png'></image>
+    <text class='text'>意见反馈</text>
+    <view class="arrow_box">
+        <b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='row' bindtap='aboutUs'>
+    <image class='pic' src='/image/guanyuwomen.png'></image>
+    <text class='text'>关于我们</text>
+    <view class="arrow_box">
+        <b class="right"><i class="right-arrow1"></i><i class="right-arrow2"></i></b>
+    </view>
+  </view>
+  <view class='line'></view>
+</view>
+
+<view class='service'>
+  <image class='pic' src='/image/dianhua.png'></image>
+  <text class='text'>联系客服</text>
+</view>
+</view>

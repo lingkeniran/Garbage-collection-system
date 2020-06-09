@@ -1,0 +1,105 @@
+/* personalCenter/showMissedOrders/showMissedOrders.wxss */
+.page{
+	/* background-color: #f5f4ef; */
+	/* height: 100%; */
+	width: 100%;
+}
+.box{ 
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20rpx;
+	margin-bottom: 30rpx;
+}
+.orderId{
+	font-size: 16px;
+	background-color: rgba(31, 202, 31, 0.548);
+	padding-left: 10rpx;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid gainsboro;
+	line-height: 1.6em;
+}
+.orderKinds{
+	font-size: 16px;
+	background-color: white;
+	padding-top: 10rpx;
+	padding-left: 10rpx;
+	height: 100%;
+	width: 100%;
+	border: 1px solid gainsboro;
+	line-height: 1.6em;
+	display: flex;
+	justify-content: space-between;
+}
+.orderStatus{
+	font-size: 16px;
+	background-color: white;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	border: 1px solid gainsboro;
+	line-height: 1.6em;
+	padding-left: 10rpx;
+	padding-top: 10rpx;
+	padding-bottom: 10rpx;
+}
+.status{
+	border: 1px solid gainsboro;
+	padding-left: 10rpx;
+	padding-right: 10rpx;
+	float: right;
+	margin-left: auto;
+	margin-right: 30rpx;
+}
+.text{
+	font-weight: bold;
+	margin-left: 30rpx;
+}
+.arrow_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	float: right;
+	right: 20rpx;
+	width:30rpx;
+	height:80rpx;
+	position:relative;
+	cursor:pointer;
+}
+/*右箭头*/
+.right {
+	width:20px;
+	height:20px;
+	position:relative;
+	left:0;
+	top:0;
+	/*border:1px solid blue;
+	*/
+}
+.right-arrow1,.right-arrow2 {
+	width:0;
+	height:0;
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	border-top:10px transparent dashed;
+	border-right:10px transparent dashed;
+	border-bottom:10px transparent dashed;
+	border-left:10px #fff solid;
+	overflow:hidden;
+}
+.right-arrow1 {
+	left:1px;
+	/*重要*/
+	border-left:10px #333 solid;
+}
+.right-arrow2 {
+	border-left:10px #fff solid;
+}
+.else{
+	font-size: 18px;
+	margin: 20rpx;
+}

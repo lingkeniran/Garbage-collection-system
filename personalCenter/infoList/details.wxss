@@ -1,0 +1,21 @@
+/* pages/message/details.wxss */
+.megDate{
+  text-align: center;
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 30rpx;
+}
+.content{
+  margin-top: 90rpx;
+  font-size: 34rpx;
+  background: rgb(219, 216, 216);
+  filter:alpha(opacity=60);
+  width: 90%;
+  margin-left: 3%;
+  margin-right: 5%;
+  border-radius: 15rpx;
+  padding: 20rpx;
+  text-align: left;
+  font-family: '宋体'
+
+}

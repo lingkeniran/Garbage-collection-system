@@ -1,0 +1,28 @@
+<!--personalCenter/address/address.wxml-->
+<view class='top'>
+	<image class='png' src='/image/add.png' bindtap='addNewAddress'></image>
+	<view style='color:gray;margin-right:30rpx;' bindtap='addNewAddress'>添加新地址</view>
+</view>
+
+<view wx:if='{{isNull}}'>
+  <view class='box' wx:for='{{addressList}}' wx:for-item='add'>
+		<view class='b'>
+			<view class='picIsD'>
+				<image class='pic' src='/image/jia.png'></image>
+				<text class='isd' wx:if='{{add.ua_is_default}}'>默认</text>
+			</view>
+			<view>
+				<text class='text' space='nbsp'> {{add.ua_name}} {{add.ua_phone}}\n</text>
+				<text class='text_1' space='nbsp'> {{add.province_name}} {{add.city_name}}  {{add.area_name}} {{add.ua_address}}</text>
+			</view>
+		</view>
+    <view class='box_2' bindtap='amend' id='{{add.u_address_id}}'>
+			<image class='pic_1' src='/image/xiugai.png'></image>
+    </view>
+  </view>
+	
+</view>
+
+<view wx:else class='else'>
+  您暂未设置地址┐(ﾟ～ﾟ)┌ 
+</view>

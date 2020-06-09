@@ -1,0 +1,13 @@
+/* personalCenter/myWallet/myWallet.wxss */
+.pic{
+  height: 300rpx;
+  width: 300rpx;
+  margin-bottom: 30rpx;
+}
+.text{
+  font-size: 18px;
+  margin: 10rpx;
+}
+.btn{
+  margin-top: 30rpx;
+}

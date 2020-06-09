@@ -1,0 +1,37 @@
+<!--personalCenter/address/amendAddress/amendAddress.wxml-->
+<view class='top'>
+	<view style='color:gray;margin-right:30rpx;' bindtap='save'>保存</view>
+</view>
+
+<input class='input' bindinput='getName' placeholder='姓名' placeholder-class='p' value='{{name}}'></input>
+<view class='line'></view>
+<input class='input' bindinput='getPhone' placeholder='手机号' placeholder-class='p' value='{{phone}}'></input>
+<view class='line'></view>
+
+<view>
+  <van-cell title="编辑地址" icon="location-o" is-link="true" arrow-direction="down" title-class="title-class" bind:click="selectAdd"/>
+</view>
+
+<!-- 省市区选择 -->
+<block wx:if="{{flag}}">
+ <van-popup show="{{ show }}" position="bottom" overlay="{{ false }}" bind:close="onClose" overlay="true">
+<van-area area-list="{{ areaList }}" bind:confirm="confirm" bind:cancel="cancel"/>
+ </van-popup>
+</block>
+
+<text space='nbsp' class='address'>省：{{rProvince}}  市：{{rCity}}  区：{{rArea}}</text>
+
+<view class="textarea-wrp">
+  <textarea auto-focus="true" bindinput='getConcreteAdd' value='{{concreteAdd}}' placeholder='详细地址：如道路、门牌号、小区、楼栋号、单元室等' maxlength='200' />
+</view>
+
+<view class='line'></view>
+<view class='default'>
+	<view>设为默认地址</view>
+	<switch type='switch' checked='{{def}}' bindchange='isDefault'></switch>
+</view>
+<view class='line'></view>
+
+<view class='line_1'></view>
+<view class='delete' bindtap='deleteAdd'>删除该地址</view>
+<view class='line'></view>
