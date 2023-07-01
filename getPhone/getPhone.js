@@ -249,7 +249,7 @@ Page({
    */
   login:function(e){
     wx.navigateTo({
-      url: '/login/login',
+      url: '../login/login',
     })
   }
 })
